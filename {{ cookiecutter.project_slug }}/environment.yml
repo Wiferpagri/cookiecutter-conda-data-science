@@ -6,7 +6,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python={{ cookiecutter.python_version }}
   - black
   - invoke
   - jupyter
@@ -36,6 +35,7 @@ dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - pyspark
   {% endif -%}
+  - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
   - python-dotenv
   - scikit-learn
