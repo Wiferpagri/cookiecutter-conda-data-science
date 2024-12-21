@@ -12,7 +12,7 @@ dependencies:
   - jupyterlab
   {% if cookiecutter.project_packages == "All" -%}
   - keras
-  - lightgbm
+  - xgboost
   {% endif -%}
   - matplotlib
   {% if cookiecutter.project_packages == "All" -%}
@@ -32,9 +32,6 @@ dependencies:
   - pylint
   {% endif -%}
   - pyprojroot
-  {% if cookiecutter.project_packages == "All" -%}
-  - pyspark
-  {% endif -%}
   - python={{ cookiecutter.python_version }}
   {% if cookiecutter.project_packages == "All" -%}
   - python-dotenv
@@ -43,5 +40,5 @@ dependencies:
   - seaborn
   {% if cookiecutter.project_packages == "All" -%}
   - statsmodels
-  - tensorflow
+  - pytorch
   {% endif -%}
